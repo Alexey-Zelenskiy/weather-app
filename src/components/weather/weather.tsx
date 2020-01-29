@@ -2,7 +2,6 @@ import * as React from "react";
 import WeatherList from "../weather-list";
 
 export default class Weather extends React.Component<any> {
-
   render() {
 
     const {data, onVisible} = this.props;

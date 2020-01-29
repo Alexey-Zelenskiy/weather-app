@@ -10,7 +10,7 @@ interface IPropState {
 }
 
 export default class WeatherLocation extends React.Component<any, IPropState> {
-
+  
   state: IPropState = {
     showMap: false,
     width: 465

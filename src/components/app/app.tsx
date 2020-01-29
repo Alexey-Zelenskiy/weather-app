@@ -57,7 +57,7 @@ class App extends React.Component<any> {
     e.preventDefault();
     this.getLocation();
     this.setState({
-      url:'',
+      url: '',
       loading: true
     })
   };
@@ -97,12 +97,12 @@ class App extends React.Component<any> {
         <Switch>
           <Route path='/' exact component={() => <Weather
             data={data}
-            onVisible={()=>this.onVisible(searchVisible)}
+            onVisible={() => this.onVisible(searchVisible)}
           />}/>
-          <Route path='/city'  component={() => <WeatherLocation
+          <Route path='/city' component={() => <WeatherLocation
             data={data}
             current={current}
-            onVisible={()=>this.onVisible(searchVisible)}
+            onVisible={() => this.onVisible(searchVisible)}
           />}/>
         </Switch>
       </>
